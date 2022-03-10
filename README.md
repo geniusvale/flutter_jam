@@ -1,4 +1,4 @@
 # flutter_jam
-## Section 11 - Introduction FLutter Widget
+## Section 11 - Introduction Flutter Widget
 Aplikasi Jam Digital dengan Stateful Widget.
 
