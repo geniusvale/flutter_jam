@@ -40,8 +40,22 @@ class _FlutterJamState extends State<FlutterJam> {
         appBar: AppBar(
           title: Text('Flutter Jam'),
         ),
-        body: Center(child: Text(Jam, style: TextStyle(fontSize: 48),)),
+        body: WidgetJam(Jam: Jam),
       ),
     );
+  }
+}
+
+class WidgetJam extends StatelessWidget {
+  const WidgetJam({
+    Key? key,
+    required this.Jam,
+  }) : super(key: key);
+
+  final String Jam;
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Text(Jam, style: TextStyle(fontSize: 48),));
   }
 }
